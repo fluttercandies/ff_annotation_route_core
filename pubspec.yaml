@@ -1,7 +1,7 @@
 name: ff_annotation_route_core
-description: A sample command-line application.
+description: The core library of ff_annotation_route.
 version: 1.0.0
-homepage:
+homepage: https://github.com/fluttercandies/ff_annotation_route_core
 
 environment:
   sdk: '>=2.6.0 <3.0.0'
