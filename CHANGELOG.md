@@ -1,4 +1,7 @@
-## 1.1.0-nullsafety.1
+## 1.1.1-nullsafety
+
+- Update nullsafety version
+## 1.1.0-nullsafety
 
 - Migrate to non-nullable
 
