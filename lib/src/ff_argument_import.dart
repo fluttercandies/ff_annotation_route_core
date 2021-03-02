@@ -5,5 +5,5 @@ class FFArgumentImport {
   /// The suffix of this import
   /// for example, maybe you need to hide,show
   /// hide xyz,show abc
-  final String suffix;
+  final String? suffix;
 }

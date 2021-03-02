@@ -1,17 +1,16 @@
 import 'dart:convert';
-import 'package:meta/meta.dart';
 
 /// Annotation to generate route
 class FFRoute {
   const FFRoute({
-    @required this.name,
+    required this.name,
     this.showStatusBar = true,
     this.routeName = '',
     this.pageRouteType,
     this.description = '',
     this.exts,
     this.argumentImports,
-  }) : assert(name != null);
+  });
 
   /// The name of the route (e.g., "/settings").
   ///
@@ -25,13 +24,13 @@ class FFRoute {
   final String routeName;
 
   /// The type of page route
-  final PageRouteType pageRouteType;
+  final PageRouteType? pageRouteType;
 
   /// The description of route
   final String description;
 
   /// The extend arguments
-  final Map<String, dynamic> exts;
+  final Map<String, dynamic>? exts;
 
   /// The imports of arguments.
   /// For example, class/enum argument should provide import url.
@@ -39,7 +38,7 @@ class FFRoute {
   ///   'import \'package:example/src/model/test_model.dart\';',
   ///   'import \'package:example/src/model/test_model1.dart\';'
   /// ],
-  final List<String> argumentImports;
+  final List<String>? argumentImports;
 
   @override
   String toString() {
