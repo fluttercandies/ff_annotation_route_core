@@ -1,3 +1,7 @@
+## 2.0.0
+
+- support nullsafety by default
+
 ## 1.1.1-nullsafety
 
 - Update nullsafety version
