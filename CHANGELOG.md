@@ -1,3 +1,7 @@
+## 2.0.2
+
+- update sdk version
+
 ## 2.0.0
 
 - support nullsafety by default
