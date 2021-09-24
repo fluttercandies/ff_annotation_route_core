@@ -5,6 +5,7 @@ class FFRoute {
   const FFRoute({
     required this.name,
     this.showStatusBar = true,
+    this.routeImportAs = '',
     this.routeName = '',
     this.pageRouteType,
     this.description = '',
@@ -19,6 +20,9 @@ class FFRoute {
 
   /// Whether show status bar.
   final bool showStatusBar;
+
+  /// Import the route path as 'xxx' to avoid conflict
+  final String routeImportAs;
 
   /// The route name to track page
   final String routeName;
@@ -45,9 +49,11 @@ class FFRoute {
     return json.encode(this);
   }
 
-  Map<String, dynamic> toJson() => <String, dynamic>{
+  Map<String, dynamic> toJson() =>
+      <String, dynamic>{
         'name': name,
         'showStatusBar': showStatusBar,
+        'routeImportAs': routeImportAs,
         'routeName': routeName,
         'pageRouteType': pageRouteType,
         'description': description,
