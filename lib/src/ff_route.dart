@@ -12,6 +12,9 @@ class FFRoute {
     this.argumentImports,
   });
 
+  static const String notFoundName = '404';
+  static const String notFoundRouteName = '404_page';
+
   /// The name of the route (e.g., "/settings").
   ///
   /// If null, the route is anonymous.
