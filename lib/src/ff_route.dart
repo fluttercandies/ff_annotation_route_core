@@ -10,6 +10,7 @@ class FFRoute {
     this.description = '',
     this.exts,
     this.argumentImports,
+    this.codes,
   });
 
   static const String notFoundName = '404';
@@ -43,6 +44,10 @@ class FFRoute {
   /// ],
   final List<String>? argumentImports;
 
+  /// to support something can't write in annotation
+  /// it will be hadnled as a code when generate route
+  final Map<String, String>? codes;
+
   @override
   String toString() {
     return json.encode(this);
@@ -56,6 +61,7 @@ class FFRoute {
         'description': description,
         'exts': exts,
         'argumentImports': argumentImports,
+        'codes': codes,
       };
 }
 

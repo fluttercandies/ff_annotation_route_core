@@ -1,3 +1,7 @@
+## 2.0.4
+
+- Add Map<String, String>? codes to support something can't write in annotation.
+
 ## 2.0.3
 
 - Add constants with not found route.
