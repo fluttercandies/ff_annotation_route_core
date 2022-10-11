@@ -63,6 +63,19 @@ class FFRoute {
         'argumentImports': argumentImports,
         'codes': codes,
       };
+
+  /// get values as constructor parameters order
+  /// you should enable --super-arguments and --argument-names
+  static List<dynamic> getArgumentValues(Map<String, dynamic> arguments) {
+    assert(arguments.containsKey(argumentNames), '');
+    final List<String> keys = arguments[argumentNames] as List<String>;
+    final List<dynamic> values = <dynamic>[];
+    for (final String key in keys) {
+      assert(arguments.containsKey(key));
+      values.add(arguments[key]);
+    }
+    return values;
+  }
 }
 
 enum PageRouteType {
@@ -71,6 +84,6 @@ enum PageRouteType {
   transparent,
 }
 
-// typedef RouteGuard = Future<bool> Function();
-
 const String constructorName = 'constructorName';
+
+const String argumentNames = 'argumentNames';

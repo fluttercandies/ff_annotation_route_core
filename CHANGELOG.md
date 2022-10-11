@@ -1,3 +1,7 @@
+## 2.0.5
+
+* Add argumentNames const and getArgumentValues method
+
 ## 2.0.4
 
 - Add Map<String, String>? codes to support something can't write in annotation.
