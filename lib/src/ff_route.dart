@@ -66,11 +66,11 @@ class FFRoute {
 
   /// get values as constructor parameters order
   /// you should enable --super-arguments and --argument-names
-  static List<dynamic> getArgumentValues(Map<String, dynamic> arguments) {
+  static List<dynamic> getArgumentValues(Map<dynamic, dynamic> arguments) {
     assert(arguments.containsKey(argumentNames), '');
-    final List<String> keys = arguments[argumentNames] as List<String>;
+    final List<dynamic> keys = arguments[argumentNames] as List<dynamic>;
     final List<dynamic> values = <dynamic>[];
-    for (final String key in keys) {
+    for (final dynamic key in keys) {
       assert(arguments.containsKey(key));
       values.add(arguments[key]);
     }
