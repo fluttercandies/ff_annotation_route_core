@@ -87,3 +87,5 @@ enum PageRouteType {
 const String constructorName = 'constructorName';
 
 const String argumentNames = 'argumentNames';
+
+const String ffRouteFileImport = 'ffRouteFileImport';

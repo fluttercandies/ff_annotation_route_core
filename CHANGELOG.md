@@ -1,3 +1,7 @@
+## 2.0.7
+
+* add ffRouteFileImport const
+
 ## 2.0.6
 
 * fix getArgumentValues cast error
