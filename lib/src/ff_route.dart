@@ -1,5 +1,7 @@
 import 'dart:convert';
 
+import 'interceptor.dart';
+
 /// Annotation to generate route
 class FFRoute {
   const FFRoute({
@@ -11,6 +13,7 @@ class FFRoute {
     this.exts,
     this.argumentImports,
     this.codes,
+    this.interceptors,
   });
 
   static const String notFoundName = '404';
@@ -47,6 +50,9 @@ class FFRoute {
   /// to support something can't write in annotation
   /// it will be hadnled as a code when generate route
   final Map<String, String>? codes;
+
+  /// The interceptors of route
+  final List<RouteInterceptor>? interceptors;
 
   @override
   String toString() {

@@ -1,4 +1,6 @@
-/// Annotation of argumentImport
+@Deprecated('Use FFAutoImport instead.')
+
+/// Annotation of argument import
 class FFArgumentImport {
   const FFArgumentImport([this.suffix]);
 

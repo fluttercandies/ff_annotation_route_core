@@ -1,3 +1,8 @@
+## 2.1.0
+
+* support route interceptor
+* FFArgumentImport is deprecated, use FFAutoImport instead.
+
 ## 2.0.7
 
 * add ffRouteFileImport const
