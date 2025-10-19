@@ -14,6 +14,7 @@ class FFRoute {
     this.argumentImports,
     this.codes,
     this.interceptors,
+    this.interceptorTypes,
   });
 
   static const String notFoundName = '404';
@@ -54,6 +55,14 @@ class FFRoute {
   /// The interceptors of route
   final List<RouteInterceptor>? interceptors;
 
+  /// The interceptor types of route.
+  ///
+  /// Use this when you want to reference interceptor classes in the
+  /// annotation so code generation can later call your DI container
+  /// (for example `getIt.get<YourInterceptor>()`) to obtain instances.
+  ///
+  final List<Type>? interceptorTypes;
+
   @override
   String toString() {
     return json.encode(this);
@@ -68,6 +77,8 @@ class FFRoute {
         'exts': exts,
         'argumentImports': argumentImports,
         'codes': codes,
+        'interceptors': interceptors,
+        'interceptorTypes': interceptorTypes,
       };
 
   /// get values as constructor parameters order

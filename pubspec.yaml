@@ -1,8 +1,8 @@
 name: ff_annotation_route_core
 description: The core library of ff_annotation_route, support both null-safety and non-null-safety.
-version: 2.1.0
+version: 2.1.1
 homepage: https://github.com/fluttercandies/ff_annotation_route_core
 
 environment:
-  sdk: '>=2.12.0 <3.0.0'
+  sdk: '>=2.12.0 <4.0.0'
 
